@@ -11,32 +11,33 @@ function App() {
   return (
     <MantineProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/highlights" element={<Highlights />} />
-          <Route path="/qualifications" element={<Qualifications />} />
-          <Route path="/eog" element={<EOG />} />
-        </Routes>
-
         <AppShell
           padding="md"
           navbar={<Navbar></Navbar>}
           header={
-            <Header height={60} p="xs">
+            <Header
+              height={60}
+              p="xs"
+              style={{
+                borderBottom: "1px solid orange",
+              }}
+            >
               {/* Header content */}
             </Header>
           }
           styles={(theme) => ({
             main: {
-              backgroundColor:
-                theme.colorScheme === "dark"
-                  ? theme.colors.dark[8]
-                  : theme.colors.gray[0],
+              backgroundColor: "#FDFAF1",
             },
           })}
         >
-          {/* Your application here */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/highlights" element={<Highlights />} />
+            <Route path="/qualifications" element={<Qualifications />} />
+            <Route path="/eog" element={<EOG />} />
+          </Routes>
         </AppShell>
       </BrowserRouter>
     </MantineProvider>

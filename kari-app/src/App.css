@@ -1,0 +1,22 @@
+.yo {
+  display: grid;
+  grid-template-columns: 269px;
+  grid-template-rows: repeat(4, 50px);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.navLink {
+  width: 250px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navLink:hover {
+  border: 2px solid palevioletred;
+  border-radius: 10px;
+}
