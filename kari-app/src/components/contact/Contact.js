@@ -1,3 +1,7 @@
+import { Button } from '@mantine/core';
+
+
 export const Contact = () => {
-  return <div>ContactPAGE</div>;
+  return <div> <Button>Hello world!</Button>
+  </div>;
 };
