@@ -18,9 +18,7 @@ export const Navbar = () => {
           return (
             <div className="navItem">
               <NavLink className="navLink" to={navItem.link}>
-                <div>
-                  <span>yo</span> {navItem.title}
-                </div>
+                <div>{navItem.title}</div>
               </NavLink>
             </div>
           );

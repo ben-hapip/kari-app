@@ -1,6 +1,7 @@
 import { AppShell, Header, MantineProvider } from "@mantine/core";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { BigHead } from "./components/BigHead/BigHead";
 import { Contact } from "./components/contact/Contact";
 import { EOG } from "./components/eog/EOG";
 import { Highlights } from "./components/highlights/Highlights";
@@ -16,13 +17,13 @@ function App() {
           navbar={<Navbar></Navbar>}
           header={
             <Header
-              height={60}
+              height={110}
               p="xs"
               style={{
                 borderBottom: "1px solid orange",
               }}
             >
-              {/* Header content */}
+              <BigHead />
             </Header>
           }
           styles={(theme) => ({
