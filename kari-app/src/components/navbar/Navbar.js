@@ -1,4 +1,4 @@
-import { Navbar as MattLikesBoys } from "@mantine/core";
+import { Navbar as HotNavBar } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 export const Navbar = () => {
   const navItems = [
@@ -9,9 +9,9 @@ export const Navbar = () => {
   ];
 
   return (
-    <MattLikesBoys
+    <HotNavBar
       width={{ base: 269 }}
-      style={{ borderRight: "1px solid orange" }}
+      style={{ borderRight: "3px solid orange" }}
     >
       <div className="yo">
         {navItems.map((navItem) => {
@@ -24,6 +24,6 @@ export const Navbar = () => {
           );
         })}
       </div>
-    </MattLikesBoys>
+    </HotNavBar>
   );
 };

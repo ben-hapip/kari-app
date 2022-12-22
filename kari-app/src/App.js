@@ -10,27 +10,22 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Qualifications } from "./components/qualifications/Qualifications";
 function App() {
   return (
-    <MantineProvider>
+    <MantineProvider >
       <BrowserRouter>
-        <AppShell
+        <AppShell 
           padding="md"
           navbar={<Navbar></Navbar>}
           header={
             <Header
-              height={110}
+              height={170}
               p="xs"
               style={{
-                borderBottom: "1px solid orange",
+                borderBottom: "3px solid orange",
               }}
             >
               <BigHead />
             </Header>
           }
-          styles={(theme) => ({
-            main: {
-              backgroundColor: "#FDFAF1",
-            },
-          })}
         >
           <Routes>
             <Route path="/" element={<Home />} />
